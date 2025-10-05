@@ -1,26 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Meu Linktree</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucas Nascimento | Links</title>
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #1e3c72, #2a5298);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --text-color: #fff;
+      --accent: #ffa500;
+      --border-glow: rgba(255, 255, 255, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-glow);
+      border-radius: 20px;
+      padding: 30px 25px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: white;
+      color: #1e3c72;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #f0f0f0;
+      transform: scale(1.03);
+    }
+
+    .links a i {
+      font-size: 18px;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+
+  <!-- Ícones do FontAwesome -->
+  <script src="https://kit.fontawesome.com/a3a4c7e943.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <img src="perfil.png.jpg" alt="Foto de Perfil" class="profile-pic">
+    <img src="eufoto.jpg" alt="Foto de Perfil" class="profile-pic">
     <h1>Lucas Nascimento de Figueiredo</h1>
-    <p>Bem-vindo ao meu Linktree! 👋</p>
+    <p>Bem-vindo ao meu espaço! 👨‍💻</p>
 
     <div class="links">
-      <a href="https://www.instagram.com/lucasndf/" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com/in/lucasndf/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/lucasndf" target="_blank">GitHub</a>
-      <a href="https://lucasndf.github.io/portfolio/" target="_blank">Portfólio</a>
+      <a href="https://www.instagram.com/lucasndf/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+      <a href="https://www.linkedin.com/in/lucasndf/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a href="https://github.com/lucasndf" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      <a href="https://lucasndf.github.io/portfolio/" target="_blank"><i class="fas fa-laptop-code"></i>Portfólio</a>
     </div>
 
     <footer>
-      <p>Feito por Lucas Nascimento</p>
+      <p>Feito com 💻 por Lucas Nascimento</p>
     </footer>
   </div>
 </body>
