@@ -29,10 +29,6 @@ https://lucasndf.github.io/meu-linktree/
 ├── eufoto.jpg
 └── README.md
 
-📄 Licença
-
-Este projeto está sob licença MIT — você pode usar e modificar livremente.
-
 👨‍💻 Autor
 
 Lucas Nascimento de Figueiredo
